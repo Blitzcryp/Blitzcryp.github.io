@@ -85,14 +85,35 @@
 
     <figure>
         <img src="Images/L1_1.png">
-        <figcaption>ECC-PNAL2-24MR-D, DC Input. Relay Output</figcaption>
+        <figcaption>Fig 2. ECC-PNAL2-24MR-D, DC Input. Relay Output</figcaption>
     </figure>
 
     <figure>
         <img src="Images/L1_1_1.png">
         <img src="Images/L1_1_2.png">
-        <figcaption>Start and Stop of the system</figcaption>
+        <figcaption>Fig 3. Start and Stop of the system</figcaption>
     </figure>
 
+
+    <h3>Problem 2</h3>
+    A vertical press is actioned by a cilinder with double action, controlled by a 5/2 distributer.
+    The operator has to press two buttons to action the press (PB1 and PB2).
+    The press comes back to its initial state if any of the buttons is released.
+    While the press is on, a led button should be illuminated.
+
+    <h4>Solution</h4>
+    It is similar to our 1st problem but we have to add a Flicker block.
+
+    The flicker block will do as its name suggest, "flick" or repeat the signal after a given interval.
+
+    The default interval si 100ms. 
+
+    To make sure that it is on when we press the two buttons only we use an AND logic gate.
+
+    <figure>
+        <img src="Images/L1_2_1.png">
+        <img src="Images/L1_2_2.png">
+        <figcaption>Fig 4. A piston being actionated on and off while the two buttons are pressed</figcaption>
+    </figure>
 </body>
 </html>
