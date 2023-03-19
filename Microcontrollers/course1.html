@@ -69,5 +69,30 @@
         <li>Create special blocks through combining multiple existing blocks</li>
         <li>"Detailed support"</li>
     </ul>
-</ body>
+
+    <h2> Let's get started with the SET/RESTET block</h2>
+
+    The SET/RESET block is a 2 In and 1 Out block. We can choose two modes, SET priority or RESET priority. 
+    Which means, if both input signals are turned on, the priority command will take precedence. 
+
+    <h3>Problem 1</h3>
+    Pressing the button B_START, with a normal open cotnact, we turn on the electric engine ME, supplied with 200 Vca. 
+    It remains turned on until we press the B_STOP button.
+    While the engine is turned on, the lamp LS will stay on and be supplied 24Vcc.
+
+    <h4>Solution</h4>
+    Because they are supplied with different voltages, we have to put them on different outputs, O1 and O2 respectively.
+
+    <figure>
+        <img src="Images/L1_1.png">
+        <figcaption>ECC-PNAL2-24MR-D, DC Input. Relay Output</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Images/L1_1_1.png">
+        <img src="Images/L1_1_2.png">
+        <figcaption>Start and Stop of the system</figcaption>
+    </figure>
+
+</body>
 </html>
